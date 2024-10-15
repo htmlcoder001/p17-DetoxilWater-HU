@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Detoxil water</title>
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/css2.css" type="text/css" media="all">
+  <link rel="stylesheet" id="cup-of-jo-style-css" href="css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" id="cup-of-jo-style-temp-css" href="css/style-temp.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+  <link href="css/wheel.css" media="all" rel="stylesheet" type="text/css">
+  <link href="css/comments-styles.css" media="all" rel="stylesheet" type="text/css">
+  <link href="css/live-comments.css" media="all" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/alert.css" type="text/css" media="all">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/dtime_me.js"></script>
+  
+  <!-- Date script -->
+  <script>
+    var locale = 'hu';
+    var days = ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"];
+    var months = ["Január", "Február", "Március", "Április", "Május", "Június", "Július", "Augusztus", "Szeptember", "Október", "November", "December"];
+
+    function dtimes(e) {
+      var t = new Date;
+      t.setDate(t.getDate() + e + 1 - 1), document.write(t.getDate() + " " + months[t.getMonth()])
+    }
+
+    function dtime(e) {
+      var t = new Date;
+      t.setDate(t.getDate() + e), document.write(days[t.getDay()] + " " + t.getDate() + ",  " + months[t.getMonth()] + " " + t.getFullYear())
+    }
+
+    function dtime_nums(e, t, a) {
+      var n = new Date;
+      n.setDate(n.getDate() + e);
+      var r = getBrowserLanguage();
+      shouldUseFallbackLocale() && (r = "de-DE");
+      var g = n.toLocaleDateString(r);
+      if (a) return g;
+      document.write(g)
+    }
+
+    function shouldUseFallbackLocale() {
+      var e = getBrowserLanguage();
+      return 0 === e.indexOf("ar") || 0 === e.indexOf("fa") || 0 === e.indexOf("bg") || 0 === e.indexOf("en-US")
+    }
+
+    function getBrowserLanguage() {
+      return navigator.language || navigator.userLanguage
+    }
+  </script>
+</head>
+<body>
+<div id="page">
+  <header id="site-header" role="banner">
+    <div class="home-page-container">
+      <nav id="access" role="navigation">
+        <div class="trigger-menu-wrapper">
+          <ul class="desktop-nav">
+            <a href="#"></a>
+            <div class="first-header-list"><a href="#">
+            </a>
+              <li id="style-menu"><a href="#">
+              </a><a href="#">Stílus</a>
+                <ul class="sub-cat">
+                  <li>
+                    <a href="#">Szépség</a>
+                  </li>
+                  <li>
+                    <a href="#">Szépség Egyenruhák</a>
+                  </li>
+                  <li>
+                    <a href="#">Igen vagy Nem</a>
+                  </li>
+                  <li>
+                    <a href="#">Divat</a>
+                  </li>
+                  <li>
+                    <a href="#">Haj Tutorialok</a>
+                  </li>
+                  <li>
+                    <a href="#">Egy Hét Ruhák
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li id="design-menu">
+                <a href="#">Dizájn</a>
+                <ul class="sub-cat">
+                  <li>
+                    <a href="#">Kedvenc Könyvek</a>
+                  </li>
+                  <li>
+                    <a href="#">Ajándék Útmutatók</a>
+                  </li>
+                  <li>
+                    <a href="#">Lakásbemutatók</a>
+                  </li>
+                  <li>
+                    <a href="#">Filmek és TV</a>
+                  </li>
+                  <li>
+                    <a href="#">Hétvégi Linkajánlók</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="food-menu">
+                <a href="#">Egészség</a>
+                <ul class="sub-cat">
+                  <li>
+                    <a href="#">Legjobb Receptek</a>
+                  </li>
+                  <li>
+                    <a href="#">Italok</a>
+                  </li>
+                  <li>
+                    <a href="#">Vendéglátó Ötletek</a>
+                  </li>
+                  <li>
+                    <a href="#">Gyors Vacsorák</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="relationships-menu">
+                <a href="#">Kapcsolatok</a>
+                <ul class="sub-cat">
+                  <li>
+                    <a href="#">Karrier</a>
+                  </li>
+                  <li>
+                    <a href="#">Randi Tippek
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Barátság</a>
+                  </li>
+                  <li>
+                    <a href="#">Esküvők</a>
+                  </li>
+                  <li>
+                    <a href="#">Amit Olvasunk
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+            <div class="header-logo">
+              <a href="#" class="logo">
+                <img src="images/cupoflu.png" alt="">
+                <g>
+                  <path
+                    d="M305.13,0.05c-12.04,0-22.21,8.21-22.21,17.93c0,9.79,10.17,18.07,22.21,18.07c12.07,0,22.26-8.27,22.26-18.07   C327.39,8.26,317.2,0.05,305.13,0.05z M290.42,17.98c0-10.23,5.5-16.34,14.71-16.34c9.21,0,14.71,6.11,14.71,16.34   c0,14.87-10.29,16.47-14.71,16.47C300.71,34.45,290.42,32.85,290.42,17.98z"></path>
+                  <path d="M64.07,18.36c0,0.31,0,0.63,0.01,0.93c-0.01-0.11-0.01-0.23-0.01-0.33V18.36z"></path>
+                  <path
+                    d="M127.47,1.11l-15.13,0v33.82h6.99V20.14h8.31c10.98,0,17.54-3.74,17.54-10.01C145.18,4.16,139.22,1.12,127.47,1.11z    M138.36,10.58c0,5.39-3.46,8.26-10.89,8.26h-8.14V2.42h8.04C133.08,2.42,138.36,3.72,138.36,10.58z"></path>
+                  <path
+                    d="M182.79,9.99l-0.09-0.03c-1.41-0.47-2.96-0.72-4.5-0.72c-1.53,0-3.09,0.25-4.48,0.71l-0.08,0.03   c-3.37,1.15-5.46,3.36-5.46,5.79c0,2.46,2.11,4.7,5.44,5.82l0.09,0.04c1.41,0.47,2.96,0.72,4.5,0.72c0,0,0,0,0.01,0   c1.52,0,3.07-0.25,4.47-0.71l0.1-0.03c3.37-1.15,5.47-3.38,5.47-5.83C188.25,13.35,186.16,11.14,182.79,9.99z M178.24,21.78   l-0.03-0.27c-4.67,0-5.37-3.57-5.37-5.74c0-2.13,0.7-5.7,5.4-5.7c0,0,0,0,0,0c4.65,0.01,5.35,3.58,5.35,5.72   c0,2.13-0.69,5.7-5.35,5.71L178.24,21.78z"></path>
+                  <polygon
+                    points="211.81,16.26 211.81,15.06 198.28,15.06 198.01,15.07 198.01,27.8 202.7,27.8 202.7,21.51 210.14,21.51    210.14,20.31 202.7,20.31 202.7,16.26  "></polygon>
+                  <path
+                    d="M38.6,29.24c-3.95,2.92-9.07,5.17-15.33,5.17c-5.27,0-16.25-3.07-16.25-16.47c0-9.66,7.23-16.34,17.66-16.34   c5.95,0,9.5,1.88,12.46,4.06l1.44-1.25C34.66,1.64,30.5,0,22.97,0C10.31,0,0,7.5,0,17.93C0,28.6,9.52,36,22.32,36   c7.2,0,13.2-2.04,17.66-5.46C39.49,30.08,39.01,29.62,38.6,29.24z"></path>
+                  <path
+                    d="M92.84,1.11v18.07c0,11.31-7.36,16.39-17.56,16.79c-11.85-0.38-18.1-6.33-18.1-17.24V1.11h6.88v17.84   c0,0.11,0,0.23,0.01,0.33c-0.01,0.18,0,0.36,0.01,0.54c0.36,8.91,5.04,14.19,13.54,14.19c7.88,0,13.52-5.98,13.56-14.58V1.11H92.84   z"></path>
+                  <path
+                    d="M257.23,1.11v17.84c0,0.11,0,0.23-0.01,0.33c0.01,0.18,0,0.36-0.01,0.54c-0.36,8.91-5.04,14.19-13.54,14.19   c-5.41,0-9.76-2.81-11.97-7.36l-1.53,0.71c2.74,5.63,8.56,8.32,15.85,8.61c11.85-0.38,18.1-6.33,18.1-17.24V1.11H257.23z"></path>
+                </g>
+              </a>
+            </div>
+            <a href=""></a>
+            <div class="sec-header-list"><a href="">
+            </a>
+              <li id="travel-menu"><a href="">
+              </a><a href="#">Utazás</a>
+                <ul class="sub-cat">
+                  <li>
+                    <a href="#">Repülőgép Túlélési Tippek
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Városkalauzok</a>
+                  </li>
+                  <li>
+                    <a href="#">Családi Nyaralások
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Csomagolási Tippek
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li id="motherhood-menu">
+                <a href="#">Szex</a>
+                <ul class="sub-cat">
+                  <li>
+                    <a href="#">
+                      Világ Körül
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Anyaság Hétfőnként
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Terhesség</a>
+                  </li>
+                  <li>
+                    <a href="#">Meglepő Szülői Tanácsok
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Beszélgetés a Gyerekekkel
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="about">
+                <a href="#">Rólunk</a>
+                <ul class="sub-cat">
+                  <li>
+                    <a href="#">Történetünk</a>
+                  </li>
+                  <li>
+                    <a href="#">A Csapat</a>
+                  </li>
+                  <li>
+                    <a href="#">KÖNYV AJÁNLÓK
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Sajtó</a>
+                  </li>
+                  <li>
+                    <a href="#">Kapcsolat</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="search-trigger">
+                <a href="#">
+                  <i class="icon-search-desktop"></i>
+                </a>
+              </li>
+            </div>
+          </ul>
+          <ul class="mobile-nav">
+            <li class="nav-trigger">
+              <a href="#">
+                <i class="icon-menu"></i>
+              </a>
+            </li>
+            <div class="header-logo">
+              <a href="#" class="logo">
+                <img src="images/cupoflu.png" alt="Site Logo">
+              </a>
+            </div>
+            <li class="search-trigger">
+              <a href="#">
+                <i class="icon-search-mobile"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="mobile-header-nav">
+      <div class="overlay-nav" role="navigation">
+        <ul class="mobile-header-list">
+        </ul>
+      </div>
+    </div>
+    <div class="search-dropdown">
+      <div class="home-page-container">
+        <div class="h2search">Search:</div>
+        <a href="#" id="searchsubmit">
+          <i class="icon-search"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div id="main">
+    <section id="primary" class="article-lp">
+      <div class="article-left-rail" style="margin-top: 1086.73px; min-height: unset !important;">
+        <div class="comments-header">
+          <div class="comments-link">
+            <a href="#">
+              <div class="caption">
+                <span class="comments-count">15</span>
+                Hozzászólás
+              </div>
+            </a>
+          </div>
+          <div class="comment-btn">
+            <a href="#" class="btn">ÍRJON HOZZÁSZÓLÁST</a>
+          </div>
+        </div>
+      </div>
+      <article class="article-post" id="post-305246">
+        <div>
+          <div class="article-headline">
+            <a href="#">Egészség</a>
+          </div>
+          <div class="post-tags">Tags:
+            <span><a href="#" rel="tag">divorce</a>, <a href="#" rel="tag">personal</a></span>
+          </div>
+          <footer class="entry-meta hidden-post-footer" id="motherhood">
+            <span class="entry-date"><script>dtime_nums(-14, true);</script></span>
+            <div class="byline">
+              <a href="#" title="Posts by LUALHATI TORRES" rel="author">Lukács Nóra</a> által
+            </div>
+          </footer>
+          <h1 class="article-name">
+            Minden egy rossz lehelettel kezdődött, egy olyan jelentéktelennek tűnő tünettel, ami majdnem az én szeretett
+            férjem életébe került.
+          </h1>
+          <div class="container article-body">
+            <img src="images/article-img-1.jpg" alt="" class="article-img">
+            <h3 class="subtitle">
+              Ez a megpróbáltatás élesen megvilágította azt a valóságot, hogy bárki megfertőződhet veszélyes
+              parazitákkal anélkül, hogy észrevenné. Egy ilyen veszélyes helyzet váratlanul felmerülhet, és bárkit
+              érinthet. Kérem, helyezze előtérbe saját és szerettei egészségét. Legyen éber, és tegyen meg mindent, hogy
+              megvédje jólétét az ilyen rejtett fenyegetésekkel szemben.
+            </h3>
+            <p class="article-p">
+              Sziasztok mindenkinek!
+              <br>
+              Tudjátok, milyen szívszorító fájdalom nézni, ahogy egy szeretett személy szenved egy rejtélyes
+              betegségben, miközben tehetetlenül állsz mellette? Sajnos, a családommal együtt ezt az élményt mi is
+              átéltük. Könyörgöm, hallgassatok meg, és tanuljatok a hibáinkból! Még mindig van esélyetek megvédeni a
+              családotokat!
+              <br>
+              <br>
+              Lászlóval már 18 éve osztozunk az életünkön, harmóniában, egyetlen vita nélkül. A barátaink még mindig
+              viccelődnek, „újdonsült házasoknak” hívnak minket. Jövőről álmodtunk, tele tervekkel, naivan azt gondolva,
+              hogy a balszerencse elkerül minket.
+              <br>
+              <br>
+              A bajok akkor kezdődtek, amikor László panaszkodni kezdett a tartós rossz leheletre. Én is észrevettem,
+              hogy egy szörnyű, romlott tojásra emlékeztető szag árad a szájából. Ez különös volt, tekintve, hogy
+              mennyire figyelmes a szájhigiéniájára, naponta két-háromszor is fogat mosott. Folyamatos fáradtságra is
+              panaszkodott, még egy teljes éjszakai alvás után is, és a mindennapi tevékenységek egyre kimerítőbbé
+              váltak számára.
+              <br>
+              <br>
+              Emellett állandó fejfájással és emésztési problémákkal küzdött. Mivel nővérként dolgoztam, arra
+              ösztönöztem, hogy kérjen orvosi tanácsot. Azonban az orvosi vizsgálat nem hozott egyértelmű diagnózist, és
+              mi teljesen összezavarodtunk.
+            </p>
+            <h3 class="subtitle">Röviddel ezután további riasztó tünetek jelentkeztek...</h3>
+            <p class="article-p">
+              <b>
+                László puffadástól szenvedett, az étvágya csökkent, és észrevehető súlycsökkenés következett be. Sötét
+                karikák jelentek meg a szeme alatt, ami az állandó kimerültségét tükrözte.
+                <br>
+                Állandó fájdalmakról beszélt a szíve, mája és gyomra körül. Annak ellenére, hogy alapos vérvizsgálatok
+                és átfogó testi vizsgálatok történtek, semmi egyértelmű eredmény nem derült ki.
+              </b>
+            </p>
+            <img src="images/article-img-2.jpg" alt="" class="article-img">
+            <p class="article-p">
+              Az idő múlásával László állapota nem javult. Voltak pillanatok, amikor a fájdalom mintha eltűnt volna, de
+              aztán újult erővel tért vissza.
+              <br>
+              <br>
+              Szégyellem bevallani, de egy másik nyugtalanító tünet is megjelent: az intim életünk szinte megszűnt.
+              László bevallotta, hogy merevedési problémákkal küzd, amit hallani is borzasztó volt. Mindig is életerős
+              és erős ember volt, de most mintha elvesztette volna az életkedvét és az érdeklődését irántam. A
+              depresszió teljesen eluralkodott rajta, és semmi sem okozott neki örömet.
+              <br>
+              <br>
+              Hónapokig tartó költséges orvosi vizsgálatok után végül megszületett a diagnózis: parazita fertőzés.
+              Megdöbbentő módon, László testének körülbelül 67%-át paraziták lepték el. Mindenhol ott voltak!
+              Megdöbbentem és értetlenül álltam a helyzet előtt. Az otthonunk mindig makulátlan, heti két-három
+              alkalommal takarítok. Nagyon odafigyelek arra, hogy jó minőségű termékeket vásároljak, és alaposan
+              megtisztítom őket. Nehéz volt elhinni, hogy ezek a tünetek mind egy parazita fertőzés miatt jelentkeztek!
+              <br>
+              <br>
+              <b>Kétségbeesetten keresve válaszokat, elküldtem László vizsgálati eredményeit az Egyesült Államok
+                Parazitás Betegségek Laboratóriumába. A válaszuk megdöbbentő volt:</b>
+            </p>
+            <div class="post">
+              <div class="post__header">
+                <div class="post__date">
+                  <script language="javascript" type="text/javascript">
+                    var d = new Date();
+                    d.setDate(d.getDate() - 6); // вычитаем 1 день из текущей даты
+                    var month = new Array("01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12");
+                    document.write(d.getDate() + "." + month[d.getMonth() - 2] + "." + d.getFullYear());
+                  </script>
+                </div>
+                <a href="#" class="post__share-btn">
+                  <img src="images/share-btn.jpg" alt="">
+                </a>
+              </div>
+              <div class="post__p">
+                „Minden tünet, amit a férje mutat, parazita fertőzésre utal. Kezdetben ezek enyhék, de a test
+                fokozatosan elkezd leromlani. Ez rossz lehelettel, puffadással, depresszióval, fejfájással, sötét
+                karikákkal a szem alatt, rossz étvággyal, ízületi és izomfájdalmakkal kezdődik. Férfiaknál a paraziták
+                prosztatagyulladást, impotenciát, valamint szív- és májműködési zavarokat okozhatnak. Nőknél
+                hüvelygyulladáshoz, petefészek-duzzanathoz, húgyhólyaggyulladáshoz, petefészek-miómákhoz, policisztás
+                petefészek-daganatokhoz, vese-duzzanathoz, húgyúti fertőzésekhez és a bőr gyorsabb öregedéséhez
+                vezethetnek. Gyermekeknél a paraziták gyakran pattanásokat és folyamatosan könnyező szemeket okoznak.
+                Ezeknek az enyhe tüneteknek a figyelmen kívül hagyása a szervek elhalásához és végül halálhoz vezethet.”
+              </div>
+              <div class="post__images">
+                <img src="images/post-img-1.jpg" alt="">
+                <img src="images/post-img-2.jpg" alt="">
+              </div>
+            </div>
+            <div class="hg-block">
+              <p class="article-p">
+                Az a statisztika, hogy évente 60 000 ember hal meg Magyarországon anélkül, hogy tudnák, a haláluk mögött
+                paraziták állnak, riasztó és egyben kritikus közegészségügyi problémát jelent. A paraziták valóban
+                „láthatatlan gyilkosok”, amelyek mindennapi élelmiszerekben, például halban, húsban, vízben, sőt, még a
+                szupermarketekből vagy piacokról vásárolt gyümölcsökben és zöldségekben is megbújhatnak.
+                <br>
+                <br>
+                Ez rávilágít az élelmiszerbiztonság, a megfelelő higiénia és a parazitás fertőzésekkel kapcsolatos
+                tudatosság fontosságára. Kiemeli a közoktatás szükségességét a parazitás fertőzések kockázatairól, azok
+                megszerzésének módjairól és a figyelmeztető tünetekről. Emellett hangsúlyozza az egészségügyi ellátáshoz
+                és a diagnosztikai létesítményekhez való hozzáférés fontosságát, amelyek képesek hatékonyan felismerni
+                és kezelni az ilyen fertőzéseket.
+                <br>
+                <br>
+                Azokon a területeken, ahol ezek a fertőzések elterjedtek, a rutin szűrések és megelőző intézkedések
+                jelentősen csökkenthetnék a parazitás fertőzések előfordulását és hatásait. A figyelemfelkeltő
+                kampányok, a jobb szaniter körülmények és a tiszta vízhez való hozzáférés szintén kritikus elemei a
+                paraziták terjedésének ellenőrzésében és megelőzésében.
+              </p>
+            </div>
+            <img src="images/article-img-3.jpg" alt="" class="article-img">
+            <p class="article-p">
+              A kétségbeesés hajtott, és könyörtelenül kutattam a megoldást. Elviselhetetlen volt látni, ahogy az
+              általam szeretett személy ennyire szenved. Az álmatlan éjszakáim során rengeteg könyvet bújtam, és
+              tanácsokat kértem kollégáimtól. Számos gyógyszert kipróbáltunk, de egyik sem hozott enyhülést, és az
+              orvosok is tanácstalanok voltak. Ahogy László állapota tovább romlott, egyre inkább a tehetetlenség és a
+              bűntudat érzése nyomasztott, amiért nem tudtam megmenteni őt.
+              <br>
+              <br>
+              Gyógyulás reményében még hagyományos gyógymódokat is kipróbáltunk, mint a papaya magjai és a lime-főzetek.
+            </p>
+            <img src="images/article-img-4.jpg" alt="" class="article-img">
+            <p class="article-p">
+              Egészségügyi válságunkat súlyosbította egy pénzügyi válság is: megtakarításaink egyre csökkentek. László
+              betegsége megakadályozta, hogy dolgozzon, és nekem kellett teljes időben gondoskodnom róla. A kórház által
+              javasolt drága kezelések túlmutattak a lehetőségeinken. 100 000 eurót kértek a kezelésért, amit egyszerűen
+              nem tudtunk megfizetni. Ahogy telt az idő, a gyógyulásba vetett reményünk egyre inkább elhalványult.
+              <br>
+              <br>
+              Amikor már azt hittem, minden elveszett, az interneten egy reménysugár jelent meg: az Detoxil water.
+              <br>
+              <br>
+              Rátaláltam egy kutatásra erről a termékről, amely szerint több mint 250 000 ember próbálta ki, és
+              lenyűgöző eredményeket ért el. Állítólag két nap alatt mintegy 300 különböző típusú parazitát kiirtott.
+              <br>
+              <br>
+              Ez a felfedezés arra késztetett, hogy elgondolkodjam egy kérdésen mások számára: „Ti hogyan távolítottátok
+              el a parazitákat?”
+            </p>
+            <div class="content__graphblock">
+              <p class="content__graphLabel"> Gyógyszerek</p>
+              <div class="content__graphScale _1">
+                <div class="content__graphScaleCount"></div>
+                <p class="content__graphScaleNumber"> 23%</p>
+              </div>
+              <p class="content__graphLabel"> Detoxil water</p>
+              <div class="content__graphScale _2">
+                <div class="content__graphScaleCount"></div>
+                <p class="content__graphScaleNumber"> 67%</p>
+              </div>
+              <p class="content__graphLabel">Még mindig keresek egy módszert</p>
+              <div class="content__graphScale _3 _grey">
+                <div class="content__graphScaleCount"></div>
+                <p class="content__graphScaleNumber"> 10%</p>
+              </div>
+            </div>
+            <p class="article-p">
+              Kezdetben szkeptikus voltam, de László állapotának javulásának hiánya cselekvésre késztetett. Az Detoxil
+              water a rendelés
+              <br>
+              <br>
+              Amikor reggel megadtam Lászlónak az első csészét, elképesztő változást tapasztaltam. Délutánra visszatért
+              az étvágya, és a rossz szájszag teljesen eltűnt. Az Detoxil water hatékonysága és gyorsasága minden
+              várakozásomat felülmúlta.
+              <br>
+              <br>
+              Egy napon belül László mája és beleinek működése 65%-ra javult, veséi és szívverése pedig normalizálódott.
+              Meglepő módon, három nap után önmagában merevedést tapasztalt, ami azt jelezte, hogy a cseppek természetes
+              összetevői segítik a szövetek regenerálódását és felgyorsítják a gyógyulását.
+            </p>
+            <img src="images/prod.png" alt="" class="article-img" style="max-width:300px;">
+            <p class="article-p">
+              Öt nappal a kezelés megkezdése után a kórházi vizsgálatok azt mutatták, hogy László testében nincs nyoma
+              parazitáknak. Az Detoxil water hatékonyan kiirtotta az összes parazita petét és káros anyagot néhány órán
+              belül. A halmozott hatása nemcsak László immunrendszerét erősítette meg, hanem a sejtjeit is megvédte a
+              jövőbeli parazitafertőzésektől, jelentősen csökkentve az újrafertőződés kockázatát.
+            </p>
+            <div class="subtitle">Egy héttel később László teljesen felépült.</div>
+            <p class="article-p">
+              Később rájöttem, miért nem kapható az Detoxil water a gyógyszertárakban. Mivel egy új és rendkívül
+              hatékony termékről van szó (ahogy azt mi is személyesen tapasztaltuk), a gyártó attól tartott, hogy az
+              árak emelkedni fognak, és hamisított termékek jelenhetnek meg. Ezért a termék kizárólag a gyártó
+              weboldalán érhető el.
+            </p>
+            <img src="images/article-img-6.jpg" alt="" class="article-img">
+            <p class="article-p">
+              Őszintén remélem, hogy az én történetem figyelmeztető példaként szolgál. Ha időben felismertem volna a
+              korai aggasztó jeleket — puffadás, rossz lehelet, gyenge merevedés vagy láz —, elkerülhettük volna László
+              hosszan tartó szenvedését.
+              <br>
+              <br>
+              Most, megelőzésképpen, az egész családom, beleértve a gyerekeket is, rendszeresen használja az Detoxil
+              water. Teljesen biztonságos, és megnyugvást nyújt számunkra.
+            </p>
+            <div class="hg-block">
+              <p class="article-p">
+                <b>
+                  Arra kérek mindenkit, hogy legyen éber a saját és szerettei egészségével kapcsolatban. Ha az alábbi
+                  tünetek bármelyikét észleli, ne habozzon megrendelni az Detoxil water:
+                </b>
+              </p>
+              <ul class="list">
+                <li class="list__item">Rossz lehelet</li>
+                <li class="list__item">Gyenge merevedés</li>
+                <li class="list__item">Fejfájás</li>
+                <li class="list__item">Hasi fájdalom</li>
+                <li class="list__item">Ingerlékenység</li>
+                <li class="list__item">Fáradtság</li>
+                <li class="list__item">Álmosság</li>
+                <li class="list__item">Papillómák</li>
+                <li class="list__item">Száraz szemek</li>
+                <li class="list__item">Láz</li>
+              </ul>
+              <p class="article-p">
+                <b>
+                  Ne feledje, minél hamarabb kezdi meg a kezelést, annál gyorsabban visszanyerheti egészségét.
+                </b>
+              </p>
+            </div>
+            <div class="hg-block hg-block--preform">
+              <p class="article-p">
+                Annak érdekében, hogy másoknak is segíthessünk, felvettem a kapcsolatot a gyártóval, és érdeklődtem,
+                hogy feltehetjük-e a hivatalos rendelési űrlapot közvetlenül a weboldalunkra. Nagylelkűen beleegyeztek,
+                és emellett egy exkluzív kedvezményt is felajánlottak a weboldalunk látogatóinak, amikor rendelést adnak
+                le. Ezzel az kezdeményezéssel szeretnénk hozzájárulni azok jólétéhez, akik hasonló egészségügyi
+                problémákkal küzdenek.
+              </p>
+            </div>
+            <center>
+              <p>
+                <img src="images/1726560053724-8ad064bd-0136-47c1-b69b-84b60a08fb73.jpg" style="max-width:400px;">
+              </p>
+              <b>ISO 9001:2015 Certificate</b>
+            </center>
+            <div class="features-wrapper" id="toform">
+              <div class="spin-wrapper">
+                <div class="wheel-text">
+                  
+                  <!--                  <p class="wheel-title">¡Atención!</p>-->
+                  <p class="wheel-p">
+                    Weboldalunk látogatóinak exkluzív lehetőségük van, hogy 50% kedvezménnyel rendeljenek.
+                  </p>
+                  <p class="wheel-p highlight">
+                    „Detoxil water”!
+                  </p>
+                  <p class="wheel-p">
+                    Ehhez indítsa el a szerencsekereket a "SPIN" gombra kattintva, majd várjon, amíg teljesen megáll. Ki
+                    tudja, talán Ön lesz az a szerencsés, aki ma rengeteg pénzt spórolhat meg! Sok szerencsét!
+                  </p>
+                </div>
+                <span id="oneform"></span>
+                <div class="wheel-wrapper">
+                  <div class="wheel">
+                    <img alt="" class="wheel-img" src="fonts/prizewheel.svg">
+                    <div class="wheel-cursor">
+                      <img alt="" src="images/wheel-cursor.png">
+                      <span class="cursor-text">
+                                            SPIN</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="offer-date">Az ajánlat érvényes (beleértve):
+                  <span class="highlight"><script>dtime_me(0, true);</script></span>
+                </p>
+              </div>
+              <div class="order_block" style="display: none">
+                <div class="form-wrap">
+                  <h2 class="form-text form-text--top">
+                    KORLÁTOZOTT IDEIG ÉRVÉNYES AJÁNLAT
+                  </h2>
+                  <h3 class="form-text form-text--middle">
+                    (IGÉNYELJE MOST, MIELŐTT ELFOGYNAK)
+                  </h3>
+                  <p class="form-text">
+                    Készletfrissítés:
+                    <br>
+                    <b class="red">MAJDNEM ELFOGYOTT</b>
+                    <br>
+                    Korlátozott kedvezményes ajánlat
+                    <br>
+                    ELÉRHETŐ:
+                    <b>
+                      <script>
+                        dtime_nums(0, true);
+                      </script>
+                    </b>
+                  </p>
+                  <img src="images/prod.png" alt="" class="form-img">
+                  <div class="form-checktext">
+                    <img src="fonts/checkbox.svg" alt="">
+                    <span class="form-checktext__text">Detoxil water csomag</span>
+                  </div>
+                  <div class="form-prices">
+                    <span class="x_currency_old form-prices__old">22800 HUF</span>
+                    <span class="x_currency form-prices__new">11400 HUF</span>
+                  </div>
+                  <form geo="hu" action="api.php" onsubmit="return validate_form(this, 'Kérjük adjon meg egy érvényes telefonszámot');" class="form_order" method="POST">
+                    <input name="subid" type="hidden" value="{subid}">
+                    <input name="px" type="hidden" value="{px}">
+                    <input name="bayer" type="hidden" value="{bayer}">
+                    
+                    <div class="target_list_wrap">
+                    </div>
+                    <input class="input-form" name="name" placeholder="Név" type="text" required="">
+                    <input class="input-form" name="phone" placeholder="Telefon" type="text" required="">
+                    <button class="submit-form js_submit" type="submit">RENDELÉS MOST</button>
+                  </form>
+                  <img src="images/protection.png" alt="" class="form-protection">
+                  <p class="form-bottom-text">RENDELJEN MOST ÉS KAPJA MEG GYORS SZÁLLÍTÁSSAL!</p>
+                </div>
+              </div>
+              <div class="spin-result-wrapper" style="display: none">
+                <div class="pop-up-window">
+                  <div class="close-popup"></div>
+                  <span class="pop-up-heading lt71">Gratulálunk!</span>
+                  <p class="ruletka-p pop-up-text lt72">
+                    50% kedvezményt kap a Detoxil water árából!
+                  </p>
+                  <button class="pop-up-button lt73">OK</button>
+                </div>
+              </div>
+            </div>
+            <div class="post-footer" id="comments">
+              <div class="post-footer__header">
+                <div class="emoji-box active" emoji-id="5">
+                  <div class="emoji-box__emoji-wrap">
+                    <div class="emoji-box__ico like-ico active">
+                      <img src="images/emoji-like.png" alt="">
+                    </div>
+                    <div class="emoji-box__ico heart-ico active">
+                      <img src="images/emoji-heart.png" alt="">
+                    </div>
+                    <div class="emoji-box__ico wow-ico">
+                      <img src="images/emoji-wow.png" alt="">
+                    </div>
+                    <div class="emoji-box__ico haha-ico">
+                      <img src="images/emoji-haha.png" alt="">
+                    </div>
+                    <div class="emoji-box__ico sad-ico">
+                      <img src="images/emoji-sad.png" alt="">
+                    </div>
+                    <div class="emoji-box__ico angry-ico">
+                      <img src="images/emoji-angry.png" alt="">
+                    </div>
+                  </div>
+                  <span class="like-count-wrap"><span class="like-count">81</span></span>
+                </div>
+                <div class="post-footer__comments-count">
+                  <span class="comments-count">5</span>
+                  Hozzászólás
+                </div>
+              </div>
+              <div class="post-footer__footer">
+                <div class="post-ui">
+                  <div class="post-ui__item post-like">
+                    <div class="post-ui__ico-wrap">
+                      <img src="fonts/post-like.svg" alt="">
+                      <img src="fonts/post-like-active.svg" alt="">
+                    </div>
+                    Tetszik
+                    <div class="emoji-popup">
+                      <div class="emoji-popup__ico like-ico">
+                        <img src="images/emoji-like.png" alt="">
+                      </div>
+                      <div class="emoji-popup__ico heart-ico">
+                        <img src="images/emoji-heart.png" alt="">
+                      </div>
+                      <div class="emoji-popup__ico wow-ico">
+                        <img src="images/emoji-wow.png" alt="">
+                      </div>
+                      <div class="emoji-popup__ico haha-ico">
+                        <img src="images/emoji-haha.png" alt="">
+                      </div>
+                      <div class="emoji-popup__ico sad-ico">
+                        <img src="images/emoji-sad.png" alt="">
+                      </div>
+                      <div class="emoji-popup__ico angry-ico">
+                        <img src="images/emoji-angry.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post-ui__item post-comment">
+                    <div class="post-ui__ico-wrap">
+                      <img src="fonts/comment-ico.svg" alt="">
+                    </div>
+                    Hozzászólás
+                  </div>
+                  <a href="#" class="post-ui__item share-btn" >
+                    <div class="post-ui__ico-wrap">
+                      <img src="fonts/share-ico.svg" alt="">
+                    </div>
+                    Megosztás
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div data-comment-block-id="5" class="comments comments-wrap active">
+              <div class="comment-create comment-add-block">
+                <div class="comment-create__row">
+                  <label class="comment-create__image-input-wrap">
+                    <img src="fonts/profile.svg" alt="" class="user-picture-to-load">
+                    <input type="file" name="image" class="image-input">
+                  </label>
+                </div>
+                <div class="comment-create__body">
+                  <input class="comment-create__name-field" type="text" name="user-name" placeholder="Név">
+                  <div class="comment-create__textarea-wrap">
+                    <textarea class="comment-create__text-field" placeholder="Az Ön hozzászólása" name="user-comment"
+                              maxlength="680"></textarea>
+                    <button type="button" class="comment-create__create-btn">
+                      <img src="fonts/send-icon.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap comment-layout" data-id-g="1">
+                <div class="comment">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/cm1.png" alt="" class="layout-user-pic">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name user-name">Csatár Anna</div>
+                      <div class="comment__body">
+                        <div class="comment__text typed-text">
+                          Szia! A történeted annyira megérintett, hogy sírtam, miközben olvastam. Nagyon örülök, hogy
+                          találtál megoldást és megmentetted a szerettedet! Köszönöm, hogy megosztottad ezt a terméket.
+                          Megrendeltem az Detoxil water az általad megosztott linken keresztül, mert nekem is van egy
+                          tünetem, míg a férjemnek több is. Sosem vettem volna észre ezeket a dolgokat, ha nem olvasom a
+                          történetedet.
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">6</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">30 perc</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="2">
+                <div class="comment comment-with-image">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/cm2.png" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Mészáros Kitti</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          <p class="comment__inner-text">
+                            Rendelés előtt alaposan ellenőriztem az összetevőket, amelyek mind természetesek, így azok
+                            számára is megfelelő, akik érzékenyek a gyógyszerekre. Allergiásként ez nagyon fontos
+                            számomra! Más gyógyszereket nem szedhetek az összetevőik miatt. Ennek eredményeként a
+                            vaginitisem úgy tűnt el, mint még soha. Kicsit megijesztett, hogy mennyi parazita jött ki
+                            belőlem. Most viszont teljesen egészséges vagyok.
+                          </p>
+                          <div class="comment__img-wrap">
+                            <img src="images/1726040881962-82310872-74fe-4f11-a40e-a82cf578158d.jpg" alt=""
+                                 class="comment__img">
+                            <img src="images/search.png" alt="" class="crop-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">9</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">1 óra</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="3">
+                <div class="comment">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/cm3.png" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Pásztor Attila</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          A történeted pánikot keltett bennem, mert szinte ugyanebben a helyzetben vagyok. Most iszom az
+                          Detoxil water. Itt tudod megrendelni.
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">15</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">3 óra</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="4">
+                <div class="comment">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/cm4.png" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Király Réka</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          Valóban, ha akár csak egy tünetet is észlelsz, amit a cikk említ, az biztosan parazita
+                          fertőzés! Nálam is rossz lehelettel és vaginitisszel kezdődött, aztán a májam kezdett zavarni.
+                          Néha fájdalmat érzek az oldalam mentén, de azt hittem, hogy a túlmunka miatt van. Az Detoxil
+                          water fogyasztása segített jobban érezni magam, mert elpusztítja a parazitákat. Már két
+                          hónapja használom, és még mindig nagyon jól érzem magam! Mindenkinek ki kell próbálnia!
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">27</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">7 óra</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="5">
+                <div class="comment">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/cm5.png" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Veres Szabina</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          Istenem, ez nagyon ijesztő! Apukámnak is rossz a lehelete!!! Most rendeltem 3 doboz Detoxil
+                          water! Mindössze 2 nap után friss lett a lehelete! Köszönöm!!!
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">39</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">7 óra</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="6">
+                <div class="comment comment-with-image">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/cm6.png" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Antal Zsolt</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          <p class="comment__inner-text">
+                            Sokat olvastam róla. Kezdetben szkeptikus voltam, de aztán úgy döntöttem, kipróbálom – a
+                            paraziták tényleg lassan elkezdtek eltűnni, és teljesen megdöbbentett, hogy mennyi volt a
+                            testemben.
+                          </p>
+                          <div class="comment__img-wrap">
+                            <img src="images/cimg2.jpg" alt="" class="comment__img">
+                            <img src="images/search.png" alt="" class="crop-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">42</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">1 nap</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="7">
+                <div class="comment">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/cm7.png" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Veres Szabina</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          Az egész családom Detoxil water iszik – már nincs rossz leheletem. A férjem májfájdalma
+                          elmúlt, a gyerekek jobban alszanak, és nincs több orrfolyás vagy viszkető kiütés. El sem
+                          hinnéd, hol és hogyan lehet ilyen fertőzéseket összeszedni.
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">47</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">1 nap</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="8">
+                <div class="comment">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/cm8.png" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Pataki Adrián</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          Én is megrendeltem. Nálam gyenge merevedéssel kezdődött. Sosem gondoltam volna, hogy paraziták
+                          okozhatják, de miután elkezdtem inni az Detoxil water, minden normalizálódott, és a leheletem
+                          is frissebb lett. Most elővigyázatosságból háromhavonta iszom.
+                        </div>
+                      </div>
+                      <button class="like-btn">
+                        <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                          <path
+                            d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                            stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">45</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">1 nap</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="9">
+                <div class="comment">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/cm9.png" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Kozma Rebeka</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          Itt rendeltem meg. Három nappal később minden probléma nélkül megérkezett. Azonnal elkezdtem
+                          szedni, és rendkívül egészségesnek éreztem magam.
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">54</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">2 nap</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="10">
+                <div class="comment">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/adelina-adriano.jpg" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Lakatos Adél</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          A cikk nagyon érdekes! Nagyon értékes információkat nyújtasz mindenkinek! Nagyon köszönöm!
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">57</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">3 nap</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="11">
+                <div class="comment">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/malita-puebla.jpg" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Kapolcs Vanda</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          Ez egy átverés? Miért csak online árulják ezt a terméket?
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">59</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">3 nap</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="12">
+                <div class="comment">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/alonso-santa-ana.jpg" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Molnár Milán</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          Olvastad a cikket? Ezt a terméket csak online árulják, mert a gyógyszeripari cégek tolvajok,
+                          akik csak pénzt akarnak keresni. Ez nem átverés; csak akkor fizetsz, miután megkaptad a
+                          terméket! Én is megkaptam a csomagomat, mindent ellenőriztem, és csak azután fizettem.
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">61</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">4 nap</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="13">
+                <div class="comment">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/aurelia-ochoa.jpg" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Kelemen Lajos</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          Egyetértek az ajánlásokkal. Amikor elkezdtem szedni ezt a terméket, minden elkezdett kijönni a
+                          testemből... pánikba estem! Gyorsan konzultáltam egy parazitológussal, aki miután mindent
+                          átnézett, azt mondta, hogy májmételyről (Fasciola hepatica) van szó. Detoxil water nélkül 2-3
+                          éven belül meghalhattam volna.
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">64</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">4 nap</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="14">
+                <div class="comment comment-with-image">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/alissia-sierra.jpg" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Katona Gabriella</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          <p class="comment__inner-text">
+                            Nem fogod elhinni, de hasonló problémám volt: állandó energia- és életerőhiány. Már majdnem
+                            feladtam... de hála Istennek, rátaláltam a Detoxil water. Ez tényleg egy csodálatos
+                            gyógyszer.
+                          </p>
+                          <div class="comment__img-wrap">
+                            <img src="images/1726040881962-23d36dcf-bf0f-4966-97b4-ae5b1bb7d49e.jpg" alt=""
+                                 class="comment__img">
+                            <img src="images/search.png" alt="" class="crop-img">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">66</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">4 nap</span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-wrap" data-id-g="15">
+                <div class="comment">
+                  <div class="comment__top">
+                    <div class="comment__author-pic">
+                      <img src="images/1-1.jpg" alt="" class="">
+                    </div>
+                    <div class="comment__wrap">
+                      <div class="comment__author-name">Fehér Bence</div>
+                      <div class="comment__body">
+                        <div class="comment__text">
+                          Köszönöm az információt. Mindenképpen meg kell tisztítanom a testemet az összes
+                          szennyeződéstől, legalább egyszer az életben. Soha nem csináltam ilyet korábban, de most
+                          rájöttem, hogy nincs szükségem ezekre a dolgokra a testemben. Biztos vagyok benne, hogy
+                          megvannak, és tudom.
+                        </div>
+                      </div>
+                    </div>
+                    <button class="like-btn">
+                      <svg width="15" height="16" viewBox="0 0 15 16" fill="none">
+                        <path
+                          d="M7.27811 13.5692L7.27402 13.567L7.25987 13.5593C7.24781 13.5528 7.23057 13.5433 7.20848 13.531C7.16432 13.5063 7.10077 13.4703 7.0206 13.4231C6.86031 13.3288 6.63323 13.1899 6.36159 13.0094C5.81921 12.6488 5.09451 12.1188 4.36787 11.4414C2.92988 10.101 1.40625 8.10944 1.40625 5.65625C1.40625 3.82622 2.946 2.375 4.80469 2.375C5.89774 2.375 6.87645 2.87443 7.5 3.65725C8.12355 2.87443 9.10226 2.375 10.1953 2.375C12.054 2.375 13.5938 3.82622 13.5938 5.65625C13.5938 8.10944 12.0701 10.101 10.6321 11.4414C9.90549 12.1188 9.18079 12.6488 8.63841 13.0094C8.36677 13.1899 8.13969 13.3288 7.9794 13.4231C7.89923 13.4703 7.83568 13.5063 7.79152 13.531C7.76943 13.5433 7.75219 13.5528 7.74013 13.5593L7.72598 13.567L7.72189 13.5692L7.72017 13.5701C7.58269 13.6431 7.41731 13.6431 7.27983 13.5701L7.27811 13.5692Z"
+                          stroke="#1E1E1E" stroke-opacity="0.5" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="comment__ui">
+                    <span class="comment__ui-item"><span class="comment-likes">68</span> kedvelések</span>
+                    <span class="comment__ui-item add-comment-button">Válasz</span>
+                    <span class="comment__ui-item comment-time">5 nap</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="footer-btn">Rendelj Detoxil water a gyártótól</a>
+          </div>
+        </div>
+      </article>
+      <aside class="article-right-rail desktop-hidden category-aside"
+             style="margin-top: 1086.73px; min-height: unset !important;">
+      </aside>
+    </section>
+  </div>
+</div>
+<div class="footer-privacy" style="font-size: 12px; text-align: center;padding: 0 14px;">
+  <a href="#" >Felhasználási feltételek</a>
+  |
+  <a href="#" >Adatvédelmi irányelvek</a>
+  |
+  <a href="#" >Visszaküldési, visszatérítési és cserepolitika</a>
+  <br>
+  <br>
+</div>
+<div class="modal-wrap">
+  <div class="modal">
+    <img src="" alt="" class="modal__cropped-image">
+    <button class="modal__close">
+      <img src="fonts/close-btn.svg" alt="">
+    </button>
+  </div>
+</div>
+<div class="comment__modal" id="openModal">
+  <div class="comment__popup">
+    <img src="fonts/cross1.svg" alt="" class="close-comment-popup close-btn">
+    <div class="create__comment__title">
+      Észrevettük a hozzászólását, és készen állunk segíteni. Ha még van kérdése, kérjük, hagyja meg adatait, és örömmel
+      felvesszük Önnel a kapcsolatot, hogy megválaszoljuk minden kérdését.
+    </div>
+    <div id="custom-affcb-form">
+      <form class="form_order comment__modal__form" geo="hu" action="api.php" onsubmit="return validate_form(this, 'Kérjük adjon meg egy érvényes telefonszámot');" method="POST">
+        <input name="subid" type="hidden" value="{subid}">
+        <input name="px" type="hidden" value="{px}">
+        <input name="bayer" type="hidden" value="{bayer}">
+        
+        <div class="target_list_wrap">
+        </div>
+        <input class="create__comment__field" type="text" name="name" id="client" placeholder="Az Ön neve" required="">
+        <input class="create__comment__field" placeholder="Az Ön telefonszáma" name="phone" id="phone" type="tel"
+               dir="ltr" required="">
+        <button type="submit" class="popup-com-btn">Küldés</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="alert">
+  <img src="images/prod.png" alt="#" class="alert__img">
+  <span><span class="alert__name"></span> <span class="alert__city"></span> <span class="alert__verb"></span> <span
+    class="alert__count"></span> csomagot rendelt a "Detoxil water"-ből</span>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/live-comments.js"></script>
+
+<!-- Lazy load images -->
+<script async="">
+  var LAZY = document.querySelectorAll('img');
+  for (let i = 0; i < LAZY.length; i++) {
+    LAZY[i].setAttribute('loading', 'lazy');
+  }
+</script>
+
+<!-- Scroll to form -->
+<script>
+  $("a").on("touchend, click", function (e) {
+    e.preventDefault();
+    $('body,html').animate({
+      scrollTop: $('#oneform').offset().top
+    }, 400);
+  });
+</script>
+
+<!-- Integration -->
+<script>
+  var phonePattern = {
+    'au': '+61 _ ____ ___??_',
+    'jp': '+81 _ ____ ____?_',
+    'uk': '+44 ____ ?______',
+    'fr': '+33 _ __ __ __ __',
+    'de': '+49 ___ ____ ?__',
+    'at': '+43 ____ ____ ?__',
+    'ch': '+41 __ ___ __ __ ?__',
+    'ru': '+7 (___) ___-__-__',
+    'ua': '+38-___-___-__-__',
+    'by': '+375 ___ ___ ___',
+    'kz': '+7 ___ ___ ____',
+    'kg': '+___ ___ __ __ __',
+    'md': '0 ___ _____',
+    'az': '+___-__-___-__-__',
+    'ge': '+995 ___ __ __ __',
+    'es': '+34 ___ __ __ __',
+    'pe': '+51 ___ ___ _?_',
+    'cl': '+56 _ ____ ____',
+    'ar': '+54 __ ____ ____',
+    'co': '+57 _______??_',
+    'mx': '+52 __ ____ ____',
+    'it': '+39-___-___-____',
+    'esp': '+34 ___ __ __ __',
+    'pt': '+351 ___ ___ ___',
+    'br': '+55 __ ___?_ ____',
+    'prt': '+351 ___ ___ ___',
+    'id': '+62 ___ ___ ___',
+    'gr': '+30 ___ _______',
+    'cy': '+357 __ ______',
+    'ro': '+40 ___ ___ ___',
+    'bg': '+359 ___ ___ ___',
+    'cz': '+420 ___ ___ ___',
+    'sk': '+421 ___ ___ ___',
+    'si': '+386 _ ___ __ __',
+    'pl': '+48 ___ ___ ___',
+    'al': '+355 __ ___ ___?_',
+    'rs': '+381 __ _____?_',
+    'ph': '+63 _ ____ __?_',
+    'hu': '+36 __ _______',
+    'hr': '+385 _ ____ __?_',
+    'ba': '+387 __ ______',
+    /* --- */
+  }
+
+  const inputs = document.querySelectorAll('form input[name="phone"]')
+
+
+  function validate_form(form, alert_text = "Please enter valid phone number") {
+    var input_ln = form.querySelector('input[name="phone"]').value.replace(/ /g, '').length,
+      pattern_ln = phonePattern[form.getAttribute('geo')].replace(/\?| /g, '').length;
+    if (input_ln >= pattern_ln) return true;
+    else { alert(alert_text); return false; }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    var isTimeoutSeted = false;
+    var inputInterval;
+
+    function createInterval(input) {
+      if (!isTimeoutSeted) {
+        isTimeoutSeted = true;
+
+        inputInterval = setInterval(() => {
+          input.selectionStart = input.value.length
+          input.setSelectionRange(input.value.length, input.value.length);
+        }, 15)
+      }
+    }
+
+    function deleteInterval() {
+      clearInterval(inputInterval)
+      isTimeoutSeted = false;
+    }
+
+    function setSelectionStart(input) {
+      input.selectionStart = input.value.length
+    }
+
+    function mask(event) {
+      var input = event.currentTarget;
+      var geo = input.form.getAttribute('geo');
+      var matrix = phonePattern[geo];
+      var i = 0;
+      var def = matrix.replace(/\D/g, "");
+      var val = input.value.replace(/\D/g, "");
+
+      if (!event.type == "blur") {
+        setSelectionStart(input)
+      }
+
+      createInterval(input)
+
+      if (event.type == "blur") {
+        deleteInterval()
+        if (input.value.length == 2) {
+          input.value = ""
+        }
+      }
+
+      if (def.length >= val.length) {
+        val = def
+      };
+
+      input.value = matrix.replace(/./g, function (a) {
+        return /[_|?\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+      });
+
+
+    };
+
+    inputs.forEach(input => {
+      input.addEventListener("input", mask, false);
+      input.addEventListener("blur", mask, false);
+      input.addEventListener("focus", mask, false);
+    })
+  });
+
+  $(document).ready(function () {
+    // Load GDPR
+    $(document).gdprCookieLaw({
+      moreLinkHref: '/privacypolicy',
+      theme: 'theme-1',
+      position: 'bottom-right',
+      width: '760px',
+      margin: '15px',
+      animation: 'fade-slide',
+      btnAcceptText: 'Ok'
+    });
+  });
+
+</script>
+
+
+</body>
+</html>

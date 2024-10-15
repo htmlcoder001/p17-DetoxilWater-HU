@@ -1,0 +1,294 @@
+.article-body {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 660px;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  flex-direction: column;
+}
+
+b {
+  font-weight: 700;
+}
+
+.content__graphblock {
+  box-sizing: border-box;
+  display: table;
+  width: 100%;
+  padding: 10px;
+  font-size: 0;
+}
+
+.content__graphLabel {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  width: 35%;
+  margin: 5px 0;
+  padding: 0 10px 0 0;
+  font-size: 13px;
+  color: #000;
+  font-weight: bold;
+}
+
+.content__graphScale {
+  display: inline-block;
+  vertical-align: top;
+  width: 65%;
+  height: 32px;
+  margin: 5px 0;
+  background: #eeeeee;
+}
+
+.content__graphScaleCount {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  background: #e8d0b2;
+}
+
+._grey .content__graphScaleCount {
+  background: #5b5b5b;
+}
+
+._1 .content__graphScaleCount {
+  width: 23%;
+}
+
+._2 .content__graphScaleCount {
+  width: 67%;
+}
+
+._3 .content__graphScaleCount {
+  width: 10%;
+}
+
+._4 .content__graphScaleCount {
+  width: 5%;
+}
+
+.content__graphScaleNumber {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 10px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #000;
+}
+
+._grey .content__graphScaleNumber {
+  color: #666666;
+}
+
+.article-img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-weight: 700;
+  margin-bottom: 1.3em;
+  font-size: 18px;
+}
+
+.article-p {
+  margin-bottom: 1.3em;
+}
+
+.post {
+  padding: 30px;
+  border: 1px solid #CCC;
+  margin-bottom: 20px;
+}
+.post__header {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post__date {
+  font-style: italic;
+}
+.post__p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.post__images {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+.post__images img {
+  max-width: 100%;
+  width: 50%;
+}
+
+.hg-block {
+  padding: 20px;
+  background: #EDE2E2;
+  margin-bottom: 20px;
+}
+.hg-block p:last-child {
+  margin-bottom: 0;
+}
+
+.list {
+  list-style-type: disc;
+}
+.spin-wrapper {
+  margin: 0 auto;
+}
+
+.hg-block--preform {
+  background: #ECE9E5;
+  margin-bottom: 58px;
+}
+
+.footer-btn {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 7px;
+  background: #E4382A;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin: 20px auto 70px;
+}
+
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.form-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.form-text--top {
+  margin-bottom: 28px;
+}
+
+.form-text--middle {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.red {
+  color: #E4382A;
+}
+
+.form-img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.form-checktext {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+.form-checktext__text {
+  font-size: 14px;
+  text-decoration: underline;
+  line-height: 122.682%;
+}
+
+.form-prices {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.form-prices__old {
+  text-decoration: line-through;
+  font-size: 16px;
+  font-weight: 700;
+}
+.form-prices__new {
+  font-size: 24px;
+  font-weight: 700;
+  color: #E4382A;
+}
+
+.form-wrap form {
+  max-width: 470px;
+  width: 100%;
+}
+
+.input-form {
+  display: block;
+  border-radius: 3px;
+  border: 1px solid #909090;
+  padding: 10px 25px;
+  line-height: 150%;
+  font-size: 16px;
+  font-weight: 400;
+  height: 56px;
+  width: 100%;
+  margin-bottom: 14px;
+  background: none;
+}
+
+.input-form::placeholder {
+  color: #909090;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.submit-form {
+  height: 56px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  background: #E4382A;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 46px;
+  border: none;
+}
+
+.form-protection {
+  max-width: 470px;
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.form-bottom-text {
+  font-size: 16px;
+  line-height: 122%;
+}
+
+.footer-privacy a {
+  color: #000;
+}
+
+@media screen and (max-width: 584px) {
+  .post__images {
+    flex-direction: column;
+  }
+  .post__images img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

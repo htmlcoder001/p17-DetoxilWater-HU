@@ -1,0 +1,51 @@
+.alert {
+    font-family: "Roboto", sans-serif;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    max-width: 90%;
+    background: #F7F7F7;
+    box-shadow: 2px 4px 15px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    transition: opacity .3s;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999999;
+    font-size: 16px;
+    line-height: 135%;
+}
+
+.alert--show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.alert__img {
+    max-height: 50px;
+    padding: 0;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.alert-offer {
+    margin-bottom: 40px;
+    text-align: center;
+    color: red;
+}
+
+
+.alert-offer {
+    margin-bottom: 40px;
+    text-align: center;
+    color: red
+}
+
+@media (max-width: 767.98px) {
+    .alert-offer {
+        margin-bottom: 15px
+    }
+}
